@@ -1,0 +1,18 @@
+# Kavelo — Software Development Agency
+
+> Kavelo is a senior engineering software development agency that builds high-performance websites, custom web applications, and mobile applications for founders and ambitious teams.
+
+## Core Capabilities
+- **Websites & Landing Pages**: Built with Next.js, React, Tailwind CSS, TypeScript. Optimized for conversion, ultra-fast load times, and SEO.
+- **Custom Platforms & Portals**: Scalable SaaS platforms, web applications, and internal tools built with Next.js, Node.js, and cloud backends.
+- **Mobile Applications**: Cross-platform iOS and Android apps using React Native.
+
+## Values & Approach
+- **Ship, Don't Stall**: Fast delivery, momentum, and short iterations.
+- **Technical Honesty**: Direct answers, realistic commitments, and transparent engineering advice.
+- **Senior Engineers Only**: Direct access to senior builders — no junior handoffs or project manager layers.
+
+## Contact & Inquiries
+- Website: https://kavelo.dev
+- Email: kavelo.hq@gmail.com
+- Contact Form: https://kavelo.dev/contact

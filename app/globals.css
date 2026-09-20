@@ -1,26 +1,274 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* ── Colors ── */
+  --color-kavelo-black: #0d0d12;
+  --color-kavelo-dark: #13131a;
+  --color-kavelo-surface: #1a1a24;
+  --color-kavelo-border: #2a2a38;
+  --color-kavelo-muted: #5a5a72;
+  --color-kavelo-subtle: #8888a8;
+  --color-kavelo-white: #f5f4f0;
+  --color-kavelo-offwhite: #c8c7c0;
+  --color-kavelo-indigo: #5b4cff;
+  --color-kavelo-indigo-light: #7b6fff;
+  --color-kavelo-indigo-dark: #3d30e0;
+  --color-kavelo-teal: #00e5c3;
+  --color-kavelo-teal-dark: #00bfa5;
+
+  /* ── Fonts ── */
+  --font-heading: "Syne", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  /* ── Radius ── */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 32px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: #0d0d12;
+    color: #f5f4f0;
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Syne", sans-serif;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+  }
+
+  ::selection {
+    background-color: #5b4cff;
+    color: #f5f4f0;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #13131a;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2a2a38;
+    border-radius: 3px;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, #f5f4f0 0%, #8888a8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-indigo {
+    background: linear-gradient(135deg, #7b6fff 0%, #00e5c3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .noise-bg {
+    position: relative;
+  }
+  .noise-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .glow-indigo {
+    box-shadow: 0 0 40px rgba(91, 76, 255, 0.25);
+  }
+
+  .glow-teal {
+    box-shadow: 0 0 40px rgba(0, 229, 195, 0.2);
+  }
+
+  .grid-pattern {
+    background-image:
+      linear-gradient(rgba(91, 76, 255, 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(91, 76, 255, 0.06) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  .hero-pointer-orb {
+    left: var(--pointer-x, 50%);
+    top: var(--pointer-y, 40%);
+    transform: translate(-50%, -50%);
+    transition: left 180ms ease-out, top 180ms ease-out;
+  }
+
+  .animate-fade-up,
+  .animate-reveal {
+    animation: fadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .animate-reveal-delay-1 {
+    animation-delay: 100ms;
+  }
+  .animate-reveal-delay-2 {
+    animation-delay: 180ms;
+  }
+  .animate-reveal-delay-3 {
+    animation-delay: 260ms;
+  }
+  .animate-reveal-delay-4 {
+    animation-delay: 340ms;
+  }
+
+  .stagger-grid > * {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  .stagger-grid.is-visible > * {
+    animation: fadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .stagger-grid > :nth-child(2) {
+    animation-delay: 100ms;
+  }
+  .stagger-grid > :nth-child(3) {
+    animation-delay: 180ms;
+  }
+  .stagger-grid > :nth-child(4) {
+    animation-delay: 260ms;
+  }
+  .stagger-grid > :nth-child(5) {
+    animation-delay: 340ms;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .motion-card {
+    transition:
+      transform 300ms cubic-bezier(0.22, 1, 0.36, 1),
+      border-color 300ms ease,
+      background-color 300ms ease;
+  }
+
+  .motion-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .scroll-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+      opacity 700ms cubic-bezier(0.22, 1, 0.36, 1),
+      transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .scroll-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .scroll-progress-track {
+    overflow: hidden;
+  }
+
+  .scroll-progress-fill {
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .scroll-progress-track.is-visible .scroll-progress-fill {
+    transform: scaleX(1);
+  }
+
+  .step-item {
+    transition: transform 300ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .step-item:hover {
+    transform: translateY(-4px);
+  }
+
+  .step-bubble {
+    transition:
+      transform 300ms cubic-bezier(0.22, 1, 0.36, 1),
+      border-color 300ms ease,
+      box-shadow 300ms ease;
+  }
+
+  .step-item:hover .step-bubble {
+    transform: translateY(-4px) scale(1.04);
+    border-color: #00e5c3;
+    box-shadow: 0 0 24px rgba(0, 229, 195, 0.16);
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+    50% {
+      transform: translate3d(0, -8px, 0);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      scroll-behavior: auto !important;
+      transition-duration: 0.01ms !important;
+    }
+
+    .stagger-grid > *,
+    .scroll-reveal {
+      opacity: 1;
+      transform: none;
+    }
+
+    .hero-pointer-orb {
+      transition: none;
+    }
+  }
 }
