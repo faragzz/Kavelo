@@ -155,7 +155,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-screen flex flex-col bg-[#0D0D12] text-[#F5F4F0] font-[family-name:var(--font-inter)] antialiased">
+      <body className="min-h-screen flex flex-col bg-[#F7F5F1] text-[#1A1D24] font-[family-name:var(--font-inter)] antialiased">
         <MotionObserver />
         <Header />
         <main className="flex-1">{children}</main>

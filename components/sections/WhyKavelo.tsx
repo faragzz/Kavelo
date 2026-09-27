@@ -5,7 +5,7 @@ const values = [
     headline: "Ship, Don't Stall",
     body: "Most agencies disappear into discovery for weeks before you see a single line of code. We get you to a usable MVP faster — something you can click, show users, and course-correct with, instead of another spec document.",
     proof: "MVPs measured in weeks, not quarters",
-    accentColor: "#5B4CFF",
+    accentColor: "#D9622B",
     icon: (
       <svg
         width="28"
@@ -27,7 +27,7 @@ const values = [
     headline: "Technical Honesty",
     body: "If a feature will take three weeks, you'll hear it in the first conversation — not the third invoice. We give straight answers on timelines, tradeoffs, and technical risk. No overpromising. No surprises.",
     proof: "Fixed-scope quotes, no scope creep",
-    accentColor: "#00E5C3",
+    accentColor: "#2E6E62",
     icon: (
       <svg
         width="28"
@@ -50,7 +50,7 @@ const values = [
     headline: "Built to Last",
     body: "Throwaway MVPs cost more in the long run. We write clean, well-structured code that your next engineer can read, extend, and maintain without needing a full rewrite six months in.",
     proof: "Documented, tested, handoff-ready",
-    accentColor: "#5B4CFF",
+    accentColor: "#D9622B",
     icon: (
       <svg
         width="28"
@@ -73,7 +73,7 @@ const values = [
     headline: "One Team, No Dilution",
     body: "You will never be handed off to a junior who wasn't in the original meeting. You work directly with the engineers building your product — every call, every decision, every sprint.",
     proof: "Direct access to your engineers, always",
-    accentColor: "#00E5C3",
+    accentColor: "#2E6E62",
     icon: (
       <svg
         width="28"
@@ -95,24 +95,24 @@ const values = [
 
 export default function WhyKavelo() {
   return (
-    <section className="py-24 lg:py-32 bg-[#13131A] relative overflow-hidden">
+    <section className="py-24 lg:py-32 bg-[#F7F5F1] relative overflow-hidden">
       {/* Subtle background line */}
-      <div className="absolute left-0 right-0 top-0 h-px bg-gradient-to-r from-transparent via-[#2A2A38] to-transparent" />
-      <div className="absolute left-0 right-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#2A2A38] to-transparent" />
+      <div className="absolute left-0 right-0 top-0 h-px bg-gradient-to-r from-transparent via-[#E4E0D9] to-transparent" />
+      <div className="absolute left-0 right-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#E4E0D9] to-transparent" />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-20">
-          <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-widest px-3 py-1.5 rounded-full text-[#5B4CFF] bg-[#5B4CFF]/10 border border-[#5B4CFF]/20 mb-6">
-            <span className="w-1 h-1 rounded-full bg-[#5B4CFF]" />
+          <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-widest px-3 py-1.5 rounded-full text-[#D9622B] bg-[#D9622B]/10 border border-[#D9622B]/20 mb-6">
+            <span className="w-1 h-1 rounded-full bg-[#D9622B]" />
             Why Kavelo
           </span>
-          <h2 className="font-[family-name:var(--font-syne)] font-bold text-4xl lg:text-5xl text-[#F5F4F0] mt-4">
+          <h2 className="font-[family-name:var(--font-syne)] font-bold text-4xl lg:text-5xl text-[#1A1D24] mt-4">
             How we work is
             <br />
             <span
               style={{
-                background: "linear-gradient(135deg, #7B6FFF 0%, #00E5C3 100%)",
+                background: "linear-gradient(135deg, #B94C1F 0%, #2E6E62 100%)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
@@ -128,11 +128,11 @@ export default function WhyKavelo() {
           {values.map((value) => (
             <div
               key={value.id}
-              className="relative bg-[#0D0D12] border border-[#2A2A38] rounded-2xl p-8 lg:p-10 overflow-hidden group hover:border-opacity-80 motion-card"
+              className="relative bg-white border border-[#E4E0D9] rounded-2xl p-8 lg:p-10 overflow-hidden group hover:border-opacity-80 motion-card"
               style={{ "--accent": value.accentColor } as React.CSSProperties}
             >
               {/* Number */}
-              <div className="text-[80px] font-bold font-[family-name:var(--font-syne)] text-[#1A1A24] leading-none absolute -top-2 -right-2 select-none pointer-events-none">
+              <div className="text-[80px] font-bold font-[family-name:var(--font-syne)] text-[#1A1D24] leading-none absolute -top-2 -right-2 select-none pointer-events-none">
                 {value.label}
               </div>
 
@@ -148,10 +148,10 @@ export default function WhyKavelo() {
                 {value.icon}
               </div>
 
-              <h3 className="font-[family-name:var(--font-syne)] font-bold text-2xl text-[#F5F4F0] mb-4">
+              <h3 className="font-[family-name:var(--font-syne)] font-bold text-2xl text-[#1A1D24] mb-4">
                 {value.headline}
               </h3>
-              <p className="text-[#5A5A72] leading-relaxed text-sm mb-6">
+              <p className="text-[#686B70] leading-relaxed text-sm mb-6">
                 {value.body}
               </p>
 

@@ -5,66 +5,66 @@ import SectionLabel from "@/components/ui/SectionLabel";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Kavelo builds websites, web applications, and mobile applications for founders and small businesses. See what's included, typical timelines, and ideal-client fit for each service.",
+    "Clinic booking platforms, academy and tutoring software, and custom workflow products built around real operating needs.",
 };
 
 const services = [
   {
-    id: "website-development",
-    label: "Websites & Landing Pages",
-    headline: "A website that works as hard as you do.",
+    id: "clinic-booking",
+    label: "Clinic booking platforms",
+    headline: "Make finding and booking care straightforward.",
     subline:
-      "Fast, semantic, and optimized for search — built on Next.js, not a drag-and-drop builder.",
+      "Give patients a clear path from finding a doctor to booking an appointment across your clinics.",
     included: [
-      "Custom design (no templates)",
-      "Mobile-first, responsive layout",
-      "Performance-optimized (Core Web Vitals green)",
-      "SEO foundations: meta, sitemap, structured data",
-      "CMS integration (Contentful, Sanity, or similar) if needed",
-      "Deployment on Vercel or your preferred host",
-      "Analytics setup (GA4 or Plausible)",
+      "Doctor profiles and specialty-based discovery",
+      "Clinic and branch directories",
+      "Appointment availability and online booking flows",
+      "Ratings and insurance provider information",
+      "Arabic and right-to-left support when required",
+      "WhatsApp and other service integrations",
+      "Responsive patient experience",
     ],
     idealClient:
-      "Founders launching a product, businesses replacing an outdated site, or anyone who's outgrown a no-code builder and needs something that actually performs.",
-    accent: "#5B4CFF",
+      "Clinics and multi-branch medical groups that want patients to discover providers and book without relying on calls and manual coordination.",
+    accent: "#D9622B",
   },
   {
-    id: "web-applications",
-    label: "Custom Platforms & Portals",
-    headline: "From spreadsheet workflow to real product.",
+    id: "academy-platforms",
+    label: "Academy and tutoring platforms",
+    headline: "Bring courses, tutors, and live classes together.",
     subline:
-      "Custom SaaS tools, internal dashboards, client portals, and MVPs — built on modern stacks with architecture you won't regret.",
+      "Give academy owners, staff, tutors, and students the tools they need in one connected learning platform.",
     included: [
-      "Full-stack web application (Next.js + TypeScript)",
-      "Database design and API architecture",
-      "Authentication and authorization",
-      "Third-party integrations (Stripe, Twilio, etc.)",
-      "Automated testing for critical paths",
-      "CI/CD pipeline setup",
-      "Documentation and developer handoff notes",
+      "Course catalog and category management",
+      "Dedicated academy owner and staff dashboards",
+      "Tutor and team management",
+      "Role-based access for owners and administrators",
+      "Media uploads and course resources",
+      "Live-class and video-conferencing integration",
+      "Scheduling and real-time session management",
     ],
     idealClient:
-      "Founders who have validated a product idea and need working software. Businesses running on fragile spreadsheets or manual processes that are ready to automate.",
-    accent: "#00E5C3",
+      "Tutoring businesses and academies managing courses, people, and live lessons across disconnected tools.",
+    accent: "#2E6E62",
   },
   {
-    id: "mobile-applications",
-    label: "Mobile Applications",
-    headline: "iOS and Android, one codebase, no compromises.",
+    id: "custom-workflows",
+    label: "Custom workflow software",
+    headline: "Replace manual hand-offs with a clear workflow.",
     subline:
-      "React Native apps that feel native — without the cost of two separate engineering teams or the limitations of a wrapper.",
+      "Turn a validated process or product idea into a web application with clear roles, integrations, and room to grow.",
     included: [
-      "React Native app for iOS & Android",
-      "Native device APIs (camera, notifications, location, biometrics)",
-      "Backend API integration or full-stack build",
-      "App Store & Google Play submission",
-      "Push notifications setup",
-      "OTA update capability (Expo EAS)",
-      "30-day post-launch support",
+      "Product discovery and scoped requirements",
+      "Role-based portals and dashboards",
+      "Database and API implementation",
+      "Third-party service integrations",
+      "Responsive user experience",
+      "Testing of key workflows",
+      "Deployment and developer handoff",
     ],
     idealClient:
-      "Founders with a validated concept who need both platforms from day one. Businesses with an existing web app looking to extend to mobile without doubling the team.",
-    accent: "#5B4CFF",
+      "Teams with a proven manual workflow or validated product idea that needs reliable software rather than another disconnected tool.",
+    accent: "#D9622B",
   },
 ];
 
@@ -72,29 +72,29 @@ export default function ServicesPage() {
   return (
     <div className="pt-16">
       {/* Page header */}
-      <section className="py-24 lg:py-32 bg-[#0D0D12] relative overflow-hidden">
+      <section className="py-24 lg:py-32 bg-[#F7F5F1] relative overflow-hidden">
         <div className="absolute inset-0 grid-pattern opacity-40" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] rounded-full bg-[#5B4CFF]/10 blur-[80px] pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] rounded-full bg-[#D9622B]/10 blur-[80px] pointer-events-none" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
           <SectionLabel>What we build</SectionLabel>
-          <h1 className="font-[family-name:var(--font-syne)] font-bold text-5xl lg:text-7xl text-[#F5F4F0] mt-6 mb-6 leading-tight">
-            Three services.
+          <h1 className="font-[family-name:var(--font-syne)] font-bold text-5xl lg:text-7xl text-[#1A1D24] mt-6 mb-6 leading-tight">
+            Software shaped around your operations.
             <br />
             <span
               style={{
-                background: "linear-gradient(135deg, #7B6FFF 0%, #00E5C3 100%)",
+                background: "linear-gradient(135deg, #B94C1F 0%, #2E6E62 100%)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
               }}
             >
-              Done properly.
+              Built with your team.
             </span>
           </h1>
-          <p className="text-[#5A5A72] text-lg max-w-xl leading-relaxed">
-            We specialise so we can go deep — not wide. Each service below is
-            something we've shipped dozens of times.
+          <p className="text-[#686B70] text-lg max-w-xl leading-relaxed">
+            Start with a clear scope, work directly with the engineers, and
+            build only what your team needs to move forward.
           </p>
         </div>
       </section>
@@ -104,10 +104,10 @@ export default function ServicesPage() {
         <section
           key={service.id}
           id={service.id}
-          className={`py-24 lg:py-32 ${i % 2 === 0 ? "bg-[#13131A]" : "bg-[#0D0D12]"} relative`}
+          className={`py-24 lg:py-32 ${i % 2 === 0 ? "bg-white" : "bg-[#F7F5F1]"} relative`}
         >
           {i % 2 === 0 && (
-            <div className="absolute left-0 right-0 top-0 h-px bg-gradient-to-r from-transparent via-[#2A2A38] to-transparent" />
+            <div className="absolute left-0 right-0 top-0 h-px bg-gradient-to-r from-transparent via-[#E4E0D9] to-transparent" />
           )}
 
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -129,19 +129,19 @@ export default function ServicesPage() {
                   {service.label}
                 </div>
 
-                <h2 className="font-[family-name:var(--font-syne)] font-bold text-3xl lg:text-4xl text-[#F5F4F0] mb-4 leading-tight">
+                <h2 className="font-[family-name:var(--font-syne)] font-bold text-3xl lg:text-4xl text-[#1A1D24] mb-4 leading-tight">
                   {service.headline}
                 </h2>
-                <p className="text-[#5A5A72] text-base leading-relaxed mb-8">
+                <p className="text-[#686B70] text-base leading-relaxed mb-8">
                   {service.subline}
                 </p>
 
                 {/* Ideal client */}
                 <div className="mb-10">
-                  <p className="text-xs text-[#5A5A72] uppercase tracking-wider font-semibold mb-3">
+                  <p className="text-xs text-[#686B70] uppercase tracking-wider font-semibold mb-3">
                     Ideal for
                   </p>
-                  <p className="text-sm text-[#8888A8] leading-relaxed">
+                  <p className="text-sm text-[#686B70] leading-relaxed">
                     {service.idealClient}
                   </p>
                 </div>
@@ -153,9 +153,9 @@ export default function ServicesPage() {
 
               {/* Right — included list */}
               <div
-                className={`${i % 2 !== 0 ? "lg:order-1" : ""} bg-[#0D0D12] border border-[#2A2A38] rounded-2xl p-8 motion-card`}
+                className={`${i % 2 !== 0 ? "lg:order-1" : ""} bg-white border border-[#E4E0D9] rounded-2xl p-8 motion-card`}
               >
-                <p className="text-xs text-[#5A5A72] uppercase tracking-widest font-semibold mb-6">
+                <p className="text-xs text-[#686B70] uppercase tracking-widest font-semibold mb-6">
                   What's included
                 </p>
                 <ul className="space-y-4">
@@ -170,7 +170,7 @@ export default function ServicesPage() {
                       >
                         ✓
                       </span>
-                      <span className="text-sm text-[#C8C7C0] leading-relaxed">
+                      <span className="text-sm text-[#686B70] leading-relaxed">
                         {item}
                       </span>
                     </li>
@@ -183,15 +183,15 @@ export default function ServicesPage() {
       ))}
 
       {/* CTA */}
-      <section className="py-24 bg-[#0D0D12] text-center relative">
+      <section className="py-24 bg-[#F7F5F1] text-center relative">
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <div className="w-[600px] h-[300px] rounded-full bg-[#5B4CFF]/10 blur-[80px]" />
+          <div className="w-[600px] h-[300px] rounded-full bg-[#D9622B]/10 blur-[80px]" />
         </div>
         <div className="relative z-10 max-w-2xl mx-auto px-6">
-          <h2 className="font-[family-name:var(--font-syne)] font-bold text-3xl lg:text-4xl text-[#F5F4F0] mb-4">
+          <h2 className="font-[family-name:var(--font-syne)] font-bold text-3xl lg:text-4xl text-[#1A1D24] mb-4">
             Not sure which fits?
           </h2>
-          <p className="text-[#5A5A72] mb-8">
+          <p className="text-[#686B70] mb-8">
             Tell us what you're building in the contact form and we'll recommend
             the right approach.
           </p>

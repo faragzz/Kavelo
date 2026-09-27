@@ -11,23 +11,23 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <div className="pt-16">
-      <section className="py-24 lg:py-32 bg-[#0D0D12] relative overflow-hidden min-h-screen">
+      <section className="py-24 lg:py-32 bg-[#F7F5F1] relative overflow-hidden min-h-screen">
         {/* Background */}
         <div className="absolute inset-0 grid-pattern opacity-30" />
-        <div className="absolute top-1/3 right-0 w-[400px] h-[400px] rounded-full bg-[#5B4CFF]/10 blur-[100px] pointer-events-none" />
+        <div className="absolute top-1/3 right-0 w-[400px] h-[400px] rounded-full bg-[#D9622B]/10 blur-[100px] pointer-events-none" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
             {/* Left — info */}
             <div>
               <SectionLabel>Get in touch</SectionLabel>
-              <h1 className="font-[family-name:var(--font-syne)] font-bold text-5xl lg:text-6xl text-[#F5F4F0] mt-6 mb-6 leading-tight">
+              <h1 className="font-[family-name:var(--font-syne)] font-bold text-5xl lg:text-6xl text-[#1A1D24] mt-6 mb-6 leading-tight">
                 Tell us what
                 <br />
                 <span
                   style={{
                     background:
-                      "linear-gradient(135deg, #7B6FFF 0%, #00E5C3 100%)",
+                      "linear-gradient(135deg, #B94C1F 0%, #2E6E62 100%)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                     backgroundClip: "text",
@@ -36,15 +36,15 @@ export default function ContactPage() {
                   you're building.
                 </span>
               </h1>
-              <p className="text-[#5A5A72] text-lg leading-relaxed mb-12">
+              <p className="text-[#686B70] text-lg leading-relaxed mb-12">
                 We'll read your message, review your project, and reply within
                 24 hours with a straight answer — not a boilerplate sales email.
               </p>
 
               {/* Contact details */}
               <div className="space-y-6 stagger-grid">
-                <div className="flex items-start gap-4 p-5 bg-[#13131A] border border-[#2A2A38] rounded-xl">
-                  <div className="w-10 h-10 rounded-lg bg-[#5B4CFF]/15 border border-[#5B4CFF]/20 flex items-center justify-center flex-shrink-0 text-[#7B6FFF]">
+                <div className="flex items-start gap-4 p-5 bg-white border border-[#E4E0D9] rounded-xl">
+                  <div className="w-10 h-10 rounded-lg bg-[#D9622B]/15 border border-[#D9622B]/20 flex items-center justify-center flex-shrink-0 text-[#B94C1F]">
                     <svg
                       width="16"
                       height="16"
@@ -60,20 +60,20 @@ export default function ContactPage() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-xs text-[#5A5A72] uppercase tracking-wider font-semibold mb-1">
+                    <p className="text-xs text-[#686B70] uppercase tracking-wider font-semibold mb-1">
                       Email us directly
                     </p>
                     <a
                       href="mailto:kavelo.hq@gmail.com"
-                      className="text-[#F5F4F0] text-sm font-medium hover:text-[#7B6FFF] transition-colors"
+                      className="text-[#1A1D24] text-sm font-medium hover:text-[#B94C1F] transition-colors"
                     >
                       kavelo.hq@gmail.com
                     </a>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-5 bg-[#13131A] border border-[#2A2A38] rounded-xl">
-                  <div className="w-10 h-10 rounded-lg bg-[#00E5C3]/15 border border-[#00E5C3]/20 flex items-center justify-center flex-shrink-0 text-[#00E5C3]">
+                <div className="flex items-start gap-4 p-5 bg-white border border-[#E4E0D9] rounded-xl">
+                  <div className="w-10 h-10 rounded-lg bg-[#2E6E62]/15 border border-[#2E6E62]/20 flex items-center justify-center flex-shrink-0 text-[#2E6E62]">
                     <svg
                       width="16"
                       height="16"
@@ -89,20 +89,20 @@ export default function ContactPage() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-xs text-[#5A5A72] uppercase tracking-wider font-semibold mb-1">
+                    <p className="text-xs text-[#686B70] uppercase tracking-wider font-semibold mb-1">
                       Response time
                     </p>
-                    <p className="text-[#F5F4F0] text-sm font-medium">
+                    <p className="text-[#1A1D24] text-sm font-medium">
                       Within 24 hours
                     </p>
-                    <p className="text-[#5A5A72] text-xs mt-0.5">
+                    <p className="text-[#686B70] text-xs mt-0.5">
                       Usually much sooner during business hours
                     </p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-5 bg-[#13131A] border border-[#2A2A38] rounded-xl">
-                  <div className="w-10 h-10 rounded-lg bg-[#5B4CFF]/15 border border-[#5B4CFF]/20 flex items-center justify-center flex-shrink-0 text-[#7B6FFF]">
+                <div className="flex items-start gap-4 p-5 bg-white border border-[#E4E0D9] rounded-xl">
+                  <div className="w-10 h-10 rounded-lg bg-[#D9622B]/15 border border-[#D9622B]/20 flex items-center justify-center flex-shrink-0 text-[#B94C1F]">
                     <svg
                       width="16"
                       height="16"
@@ -118,13 +118,13 @@ export default function ContactPage() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-xs text-[#5A5A72] uppercase tracking-wider font-semibold mb-1">
+                    <p className="text-xs text-[#686B70] uppercase tracking-wider font-semibold mb-1">
                       What happens next
                     </p>
-                    <p className="text-[#F5F4F0] text-sm font-medium">
+                    <p className="text-[#1A1D24] text-sm font-medium">
                       A real reply from an engineer
                     </p>
-                    <p className="text-[#5A5A72] text-xs mt-0.5">
+                    <p className="text-[#686B70] text-xs mt-0.5">
                       Not an automated sequence. Not a sales call you didn't ask
                       for.
                     </p>
@@ -134,8 +134,8 @@ export default function ContactPage() {
             </div>
 
             {/* Right — form */}
-            <div className="bg-[#13131A] border border-[#2A2A38] rounded-2xl p-8 lg:p-10 motion-card animate-reveal animate-reveal-delay-2">
-              <h2 className="font-[family-name:var(--font-syne)] font-bold text-xl text-[#F5F4F0] mb-8">
+            <div className="bg-white border border-[#E4E0D9] rounded-2xl p-8 lg:p-10 motion-card animate-reveal animate-reveal-delay-2">
+              <h2 className="font-[family-name:var(--font-syne)] font-bold text-xl text-[#1A1D24] mb-8">
                 Start your project
               </h2>
               <ContactForm />

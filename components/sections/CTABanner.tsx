@@ -2,46 +2,46 @@ import CTAButton from "@/components/ui/CTAButton";
 
 export default function CTABanner() {
   return (
-    <section className="py-24 lg:py-32 bg-[#0D0D12] relative overflow-hidden">
+    <section className="py-24 lg:py-32 bg-[#F7F5F1] relative overflow-hidden">
       {/* Background accent */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <div className="w-[800px] h-[400px] rounded-full bg-[#5B4CFF]/10 blur-[100px]" />
+        <div className="w-[800px] h-[400px] rounded-full bg-[#D9622B]/10 blur-[100px]" />
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-8 text-center">
         {/* Pre-headline */}
-        <p className="text-[#5A5A72] text-sm font-medium uppercase tracking-widest mb-6">
-          Ready when you are
+        <p className="text-[#686B70] text-sm font-medium uppercase tracking-widest mb-6">
+          For clinics, academies, and product teams
         </p>
 
         {/* Headline */}
-        <h2 className="font-[family-name:var(--font-syne)] font-bold text-4xl lg:text-6xl text-[#F5F4F0] leading-tight mb-6">
-          Let's build something
+        <h2 className="font-[family-name:var(--font-syne)] font-bold text-4xl lg:text-6xl text-[#1A1D24] leading-tight mb-6">
+          Have a workflow
           <br />
           <span
             style={{
-              background: "linear-gradient(135deg, #7B6FFF 0%, #00E5C3 100%)",
+              background: "linear-gradient(135deg, #B94C1F 0%, #2E6E62 100%)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
               backgroundClip: "text",
             }}
           >
-            worth shipping.
+            worth improving?
           </span>
         </h2>
 
-        <p className="text-[#5A5A72] text-lg leading-relaxed max-w-xl mx-auto mb-12">
-          Tell us what you're building. We'll respond within 24 hours with a straight answer
-          — not a discovery questionnaire.
+        <p className="text-[#686B70] text-lg leading-relaxed max-w-xl mx-auto mb-12">
+          Tell us where booking, learning, or day-to-day operations get stuck.
+          We&apos;ll help scope a practical next step and reply within 24 hours.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <CTAButton href="/contact" size="lg">
-            Start your project →
+            Talk through your project →
           </CTAButton>
           <a
             href="mailto:kavelo.hq@gmail.com"
-            className="text-sm text-[#8888A8] hover:text-[#F5F4F0] transition-colors"
+            className="text-sm text-[#686B70] hover:text-[#1A1D24] transition-colors"
           >
             Or email us directly at kavelo.hq@gmail.com
           </a>

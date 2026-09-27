@@ -1,15 +1,15 @@
 type SectionLabelProps = {
   children: React.ReactNode;
-  accent?: "indigo" | "teal";
+  accent?: "amber" | "teal";
 };
 
 export default function SectionLabel({
   children,
-  accent = "indigo",
+  accent = "amber",
 }: SectionLabelProps) {
   const colors = {
-    indigo: "text-[#5B4CFF] bg-[#5B4CFF]/10 border border-[#5B4CFF]/20",
-    teal: "text-[#00E5C3] bg-[#00E5C3]/10 border border-[#00E5C3]/20",
+    amber: "text-kavelo-amber bg-kavelo-amber/10 border border-kavelo-amber/20",
+    teal: "text-kavelo-teal bg-kavelo-teal/10 border border-kavelo-teal/20",
   };
 
   return (
@@ -17,7 +17,7 @@ export default function SectionLabel({
       className={`inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-widest px-3 py-1.5 rounded-full animate-reveal ${colors[accent]}`}
     >
       <span
-        className={`w-1 h-1 rounded-full ${accent === "indigo" ? "bg-[#5B4CFF]" : "bg-[#00E5C3]"}`}
+        className={`w-1 h-1 rounded-full ${accent === "amber" ? "bg-kavelo-amber" : "bg-kavelo-teal"}`}
       />
       {children}
     </span>

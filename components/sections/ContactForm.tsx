@@ -3,14 +3,13 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
-import {
-  contactSchema,
-  ContactFormData,
-} from "@/lib/validations";
+import { contactSchema, ContactFormData } from "@/lib/validations";
 import CTAButton from "@/components/ui/CTAButton";
 
 export default function ContactForm() {
-  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [status, setStatus] = useState<
+    "idle" | "loading" | "success" | "error"
+  >("idle");
   const [errorMessage, setErrorMessage] = useState("");
 
   const {
@@ -43,31 +42,35 @@ export default function ContactForm() {
     } catch (err: unknown) {
       setStatus("error");
       setErrorMessage(
-        err instanceof Error ? err.message : "Failed to send. Please email us directly."
+        err instanceof Error
+          ? err.message
+          : "Failed to send. Please email us directly.",
       );
     }
   };
 
   const inputClass =
-    "w-full bg-[#13131A] border border-[#2A2A38] rounded-xl px-4 py-3 text-sm text-[#F5F4F0] placeholder:text-[#5A5A72] focus:outline-none focus:border-[#5B4CFF] transition-colors duration-200";
-  const labelClass = "block text-xs font-semibold text-[#8888A8] uppercase tracking-wider mb-2";
+    "w-full bg-white border border-[#E4E0D9] rounded-xl px-4 py-3 text-sm text-[#1A1D24] placeholder:text-[#686B70] focus:outline-none focus:border-[#D9622B] transition-colors duration-200";
+  const labelClass =
+    "block text-xs font-semibold text-[#686B70] uppercase tracking-wider mb-2";
   const errorClass = "text-xs text-red-400 mt-1.5";
 
   if (status === "success") {
     return (
       <div className="text-center py-12">
-        <div className="w-14 h-14 rounded-2xl bg-[#00E5C3]/15 border border-[#00E5C3]/30 flex items-center justify-center mx-auto mb-6 text-2xl">
+        <div className="w-14 h-14 rounded-2xl bg-[#2E6E62]/15 border border-[#2E6E62]/30 flex items-center justify-center mx-auto mb-6 text-2xl">
           ✓
         </div>
-        <h3 className="font-[family-name:var(--font-syne)] font-bold text-2xl text-[#F5F4F0] mb-3">
+        <h3 className="font-[family-name:var(--font-syne)] font-bold text-2xl text-[#1A1D24] mb-3">
           Message received.
         </h3>
-        <p className="text-[#5A5A72] text-sm max-w-sm mx-auto">
-          We'll review your project and reply to your email within 24 hours — usually sooner.
+        <p className="text-[#686B70] text-sm max-w-sm mx-auto">
+          We'll review your project and reply to your email within 24 hours —
+          usually sooner.
         </p>
         <button
           onClick={() => setStatus("idle")}
-          className="mt-6 text-sm text-[#5B4CFF] hover:text-[#7B6FFF] transition-colors"
+          className="mt-6 text-sm text-[#D9622B] hover:text-[#B94C1F] transition-colors"
         >
           Send another message
         </button>
@@ -81,7 +84,7 @@ export default function ContactForm() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <div>
           <label htmlFor="name" className={labelClass}>
-            Name <span className="text-[#5B4CFF]">*</span>
+            Name <span className="text-[#D9622B]">*</span>
           </label>
           <input
             id="name"
@@ -94,7 +97,7 @@ export default function ContactForm() {
         </div>
         <div>
           <label htmlFor="email" className={labelClass}>
-            Email <span className="text-[#5B4CFF]">*</span>
+            Email <span className="text-[#D9622B]">*</span>
           </label>
           <input
             id="email"
@@ -111,7 +114,7 @@ export default function ContactForm() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <div>
           <label htmlFor="projectType" className={labelClass}>
-            Project type <span className="text-[#5B4CFF]">*</span>
+            Project type <span className="text-[#D9622B]">*</span>
           </label>
           <select
             id="projectType"
@@ -134,7 +137,7 @@ export default function ContactForm() {
         <div>
           <label htmlFor="budgetRange" className={labelClass}>
             Budget range{" "}
-            <span className="text-[#5A5A72] normal-case tracking-normal font-normal">
+            <span className="text-[#686B70] normal-case tracking-normal font-normal">
               (optional)
             </span>
           </label>
@@ -151,7 +154,7 @@ export default function ContactForm() {
       {/* Message */}
       <div>
         <label htmlFor="message" className={labelClass}>
-          Tell us about your project <span className="text-[#5B4CFF]">*</span>
+          Tell us about your project <span className="text-[#D9622B]">*</span>
         </label>
         <textarea
           id="message"
@@ -181,7 +184,7 @@ export default function ContactForm() {
         {status === "loading" ? "Sending…" : "Send message →"}
       </CTAButton>
 
-      <p className="text-center text-xs text-[#5A5A72]">
+      <p className="text-center text-xs text-[#686B70]">
         We reply within 24 hours. No sales calls unless you request one.
       </p>
     </form>

@@ -11,7 +11,7 @@ export async function POST(req: NextRequest) {
     if (!parsed.success) {
       return NextResponse.json(
         { message: "Invalid form data", errors: parsed.error.flatten() },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
@@ -65,7 +65,7 @@ ${message}
 <body style="font-family: sans-serif; max-width: 600px; margin: 0 auto; padding: 32px; background: #f8f8f8; color: #333;">
   <div style="background: white; border-radius: 12px; padding: 32px; border: 1px solid #e0e0e0;">
     <div style="margin-bottom: 24px; padding-bottom: 24px; border-bottom: 1px solid #e0e0e0;">
-      <h1 style="margin: 0; font-size: 20px; color: #0D0D12;">New project enquiry</h1>
+      <h1 style="margin: 0; font-size: 20px; color: #12151C;">New project enquiry</h1>
       <p style="margin: 4px 0 0; font-size: 14px; color: #666;">via kavelo.dev contact form</p>
     </div>
     
@@ -76,7 +76,7 @@ ${message}
       </tr>
       <tr>
         <td style="padding: 8px 0; font-size: 12px; color: #999; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;">Email</td>
-        <td style="padding: 8px 0; font-size: 14px; color: #333;"><a href="mailto:${email}" style="color: #5B4CFF;">${email}</a></td>
+        <td style="padding: 8px 0; font-size: 14px; color: #1A1D24;"><a href="mailto:${email}" style="color: #D9622B;">${email}</a></td>
       </tr>
       <tr>
         <td style="padding: 8px 0; font-size: 12px; color: #999; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;">Project Type</td>
@@ -102,12 +102,18 @@ ${message}
       `.trim(),
     });
 
-    return NextResponse.json({ message: "Message sent successfully" }, { status: 200 });
+    return NextResponse.json(
+      { message: "Message sent successfully" },
+      { status: 200 },
+    );
   } catch (error) {
     console.error("[/api/contact] Error:", error);
     return NextResponse.json(
-      { message: "Failed to send message. Please try again or email us directly." },
-      { status: 500 }
+      {
+        message:
+          "Failed to send message. Please try again or email us directly.",
+      },
+      { status: 500 },
     );
   }
 }

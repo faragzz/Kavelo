@@ -30,21 +30,21 @@ const values = [
 export default function AboutPage() {
   return (
     <div className="pt-16">
-      <section className="py-24 lg:py-32 bg-[#0D0D12] relative overflow-hidden">
+      <section className="py-24 lg:py-32 bg-[#F7F5F1] relative overflow-hidden">
         <div className="absolute inset-0 grid-pattern opacity-40" />
-        <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-[#5B4CFF]/10 blur-[80px] pointer-events-none" />
+        <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-[#D9622B]/10 blur-[80px] pointer-events-none" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <SectionLabel>About Kavelo</SectionLabel>
-              <h1 className="font-[family-name:var(--font-syne)] font-bold text-5xl lg:text-6xl text-[#F5F4F0] mt-6 mb-6 leading-tight">
+              <h1 className="font-[family-name:var(--font-syne)] font-bold text-5xl lg:text-6xl text-[#1A1D24] mt-6 mb-6 leading-tight">
                 Built by engineers
                 <br />
                 <span
                   style={{
                     background:
-                      "linear-gradient(135deg, #7B6FFF 0%, #00E5C3 100%)",
+                      "linear-gradient(135deg, #B94C1F 0%, #2E6E62 100%)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                     backgroundClip: "text",
@@ -53,7 +53,7 @@ export default function AboutPage() {
                   who ship things.
                 </span>
               </h1>
-              <p className="text-[#5A5A72] text-lg leading-relaxed">
+              <p className="text-[#686B70] text-lg leading-relaxed">
                 Kavelo exists because founders kept telling us the same story:
                 they hired an agency, got a beautiful proposal, waited three
                 months, and ended up with code they couldn&apos;t maintain.
@@ -61,15 +61,15 @@ export default function AboutPage() {
             </div>
 
             <div className="relative">
-              <div className="aspect-square max-w-sm mx-auto rounded-2xl bg-[#13131A] border border-[#2A2A38] flex items-center justify-center motion-card animate-float">
+              <div className="aspect-square max-w-sm mx-auto rounded-2xl bg-white border border-[#E4E0D9] flex items-center justify-center motion-card animate-float">
                 <div className="text-center p-8">
-                  <div className="w-20 h-20 rounded-full bg-[#5B4CFF]/20 border border-[#5B4CFF]/30 flex items-center justify-center text-2xl font-bold font-[family-name:var(--font-syne)] text-[#7B6FFF] mx-auto mb-4">
+                  <div className="w-20 h-20 rounded-full bg-[#D9622B]/20 border border-[#D9622B]/30 flex items-center justify-center text-2xl font-bold font-[family-name:var(--font-syne)] text-[#B94C1F] mx-auto mb-4">
                     AF
                   </div>
-                  <p className="text-[#F5F4F0] font-semibold font-[family-name:var(--font-syne)] mb-1">
+                  <p className="text-[#1A1D24] font-semibold font-[family-name:var(--font-syne)] mb-1">
                     Ahmed Farag
                   </p>
-                  <p className="text-[#5A5A72] text-sm">
+                  <p className="text-[#686B70] text-sm">
                     Founder &amp; Engineer, Kavelo
                   </p>
                 </div>
@@ -79,11 +79,11 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-24 lg:py-32 bg-[#13131A] relative">
-        <div className="absolute left-0 right-0 top-0 h-px bg-gradient-to-r from-transparent via-[#2A2A38] to-transparent" />
+      <section className="py-24 lg:py-32 bg-white relative">
+        <div className="absolute left-0 right-0 top-0 h-px bg-gradient-to-r from-transparent via-[#E4E0D9] to-transparent" />
         <div className="max-w-3xl mx-auto px-6 lg:px-8">
           <SectionLabel accent="teal">The story</SectionLabel>
-          <div className="mt-8 space-y-6 text-[#8888A8] text-lg leading-relaxed">
+          <div className="mt-8 space-y-6 text-[#686B70] text-lg leading-relaxed">
             <p>
               Before Kavelo, I was building other people&apos;s products —
               tutoring platforms with live classes and payments, hospital
@@ -114,14 +114,14 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-24 lg:py-32 bg-[#0D0D12]">
+      <section className="py-24 lg:py-32 bg-[#F7F5F1]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-20">
             <SectionLabel>How we work</SectionLabel>
-            <h2 className="font-[family-name:var(--font-syne)] font-bold text-4xl lg:text-5xl text-[#F5F4F0] mt-6">
+            <h2 className="font-[family-name:var(--font-syne)] font-bold text-4xl lg:text-5xl text-[#1A1D24] mt-6">
               Values, in context.
             </h2>
-            <p className="text-[#5A5A72] mt-4 max-w-lg mx-auto">
+            <p className="text-[#686B70] mt-4 max-w-lg mx-auto">
               These aren&apos;t aspirational bullets on a deck — they&apos;re
               the things we actually think about when we take on a project.
             </p>
@@ -131,18 +131,18 @@ export default function AboutPage() {
             {values.map((v, i) => (
               <div
                 key={v.headline}
-                className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-12 items-start p-8 lg:p-10 bg-[#13131A] border border-[#2A2A38] rounded-2xl motion-card"
+                className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-12 items-start p-8 lg:p-10 bg-white border border-[#E4E0D9] rounded-2xl motion-card"
               >
                 <div>
-                  <span className="text-xs text-[#5A5A72] font-semibold uppercase tracking-widest">
+                  <span className="text-xs text-[#686B70] font-semibold uppercase tracking-widest">
                     0{i + 1}
                   </span>
-                  <h3 className="font-[family-name:var(--font-syne)] font-bold text-2xl text-[#F5F4F0] mt-2">
+                  <h3 className="font-[family-name:var(--font-syne)] font-bold text-2xl text-[#1A1D24] mt-2">
                     {v.headline}
                   </h3>
                 </div>
                 <div className="lg:col-span-2">
-                  <p className="text-[#5A5A72] leading-relaxed">{v.body}</p>
+                  <p className="text-[#686B70] leading-relaxed">{v.body}</p>
                 </div>
               </div>
             ))}
@@ -150,12 +150,12 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-[#13131A] text-center border-t border-[#2A2A38]">
+      <section className="py-20 bg-white text-center border-t border-[#E4E0D9]">
         <div className="max-w-xl mx-auto px-6">
-          <h2 className="font-[family-name:var(--font-syne)] font-bold text-3xl text-[#F5F4F0] mb-4">
+          <h2 className="font-[family-name:var(--font-syne)] font-bold text-3xl text-[#1A1D24] mb-4">
             Let&apos;s work together.
           </h2>
-          <p className="text-[#5A5A72] mb-8">
+          <p className="text-[#686B70] mb-8">
             If any of this resonates, we&apos;d love to hear what you&apos;re
             building.
           </p>
