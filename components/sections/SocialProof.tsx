@@ -1,8 +1,12 @@
+import Image from "next/image";
+
 const featuredWork = [
   {
     number: "01",
     category: "Healthcare / Appointment booking",
     name: "Balsam Medical",
+    image: "/projects/balsam-medical.webp",
+    imageAlt: "Balsam Medical doctor booking directory",
     description:
       "A multi-branch booking platform where patients can find doctors by specialty, compare availability and ratings, and book visits. Clinic directories, insurance listings, Arabic support, and WhatsApp contact are part of the experience.",
     href: "https://blsmy.com/aldammam/",
@@ -12,6 +16,8 @@ const featuredWork = [
     number: "02",
     category: "Education / Online tutoring",
     name: "tutortod",
+    image: "/projects/tutortod.webp",
+    imageAlt: "tutortod online tutoring platform homepage",
     description:
       "An academy platform combining course discovery and owner dashboards with tutor management, media uploads, role-based access, and live classes through built-in video conferencing.",
     href: "https://tutortod.com",
@@ -31,7 +37,8 @@ export default function SocialProof() {
             Built for real operations.
           </h2>
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-kavelo-muted">
-            Two platforms built for teams working in healthcare and education.
+            Two platforms built for healthcare and education, shown here with
+            links to the live products.
           </p>
         </div>
 
@@ -41,6 +48,22 @@ export default function SocialProof() {
               key={work.name}
               className="border-t border-kavelo-border pt-6"
             >
+              <a
+                href={work.href}
+                target="_blank"
+                rel="noreferrer"
+                className="group/image relative mb-6 block aspect-video overflow-hidden bg-kavelo-border"
+                aria-label={work.linkLabel}
+              >
+                <Image
+                  src={work.image}
+                  alt={work.imageAlt}
+                  fill
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                  unoptimized
+                  className="object-cover transition-transform duration-500 group-hover/image:scale-[1.02]"
+                />
+              </a>
               <div className="mb-5 flex items-center justify-between gap-4">
                 <p className="text-xs font-semibold uppercase tracking-widest text-kavelo-teal">
                   {work.category}

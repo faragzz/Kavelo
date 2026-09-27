@@ -3,14 +3,14 @@ const steps = [
     number: "01",
     title: "Discovery",
     description:
-      "A focused 60-minute call to understand what you're building, why, and for whom. We scope it honestly — what's in, what's out, what it costs.",
+      "A focused call to understand what you're building, why, and for whom. You receive a written scope, timeline, and estimate before deciding whether to proceed.",
     duration: "Week 1",
   },
   {
     number: "02",
     title: "Build",
     description:
-      "Once scope is clear, we build toward a usable MVP — not decks of wireframes. You get regular updates and a live preview throughout, so you can steer with real software.",
+      "Once scope is approved, Ahmed builds toward a usable product. You get regular updates and a live preview, so you can review real software as it takes shape.",
     duration: "Weeks 2–N",
   },
   {

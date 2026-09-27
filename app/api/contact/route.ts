@@ -18,10 +18,10 @@ export async function POST(req: NextRequest) {
     const { name, email, projectType, budgetRange, message } = parsed.data;
 
     const projectTypeLabels: Record<string, string> = {
-      website: "Websites & Landing Pages",
-      "custom-software": "Custom Platforms & Portals",
-      "mobile-app": "Mobile Applications",
-      both: "Both / Multiple Services",
+      website: "Website or landing page",
+      "custom-software": "Web application",
+      "mobile-app": "Mobile application",
+      both: "Multiple services",
     };
 
     // Configure transporter

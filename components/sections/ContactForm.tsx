@@ -125,10 +125,10 @@ export default function ContactForm() {
             <option value="" disabled>
               Select a type…
             </option>
-            <option value="website">Websites & Landing Pages</option>
-            <option value="custom-software">Custom Platforms & Portals</option>
-            <option value="mobile-app">Mobile Applications</option>
-            <option value="both">Both / Multiple Services</option>
+            <option value="website">Website or landing page</option>
+            <option value="custom-software">Web application</option>
+            <option value="mobile-app">Mobile application</option>
+            <option value="both">Multiple services</option>
           </select>
           {errors.projectType && (
             <p className={errorClass}>{errors.projectType.message}</p>
@@ -185,7 +185,7 @@ export default function ContactForm() {
       </CTAButton>
 
       <p className="text-center text-xs text-[#686B70]">
-        We reply within 24 hours. No sales calls unless you request one.
+        Ahmed will email you within 24 hours.
       </p>
     </form>
   );

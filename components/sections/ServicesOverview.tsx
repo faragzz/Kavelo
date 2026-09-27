@@ -56,14 +56,14 @@ const services = [
         strokeLinecap="round"
         strokeLinejoin="round"
       >
-        <rect x="3" y="5" width="18" height="16" rx="2" />
-        <path d="M8 3v4M16 3v4M3 10h18M8 14h3M8 18h7" />
+        <rect x="3" y="4" width="18" height="16" rx="2" />
+        <path d="M3 9h18M7 6.5h.01M10 6.5h.01" />
       </svg>
     ),
-    title: "Clinic booking platforms",
+    title: "Websites & Landing Pages",
     description:
-      "Help patients find the right doctor, check availability, and book across clinic branches. Add doctor profiles, insurance information, Arabic support, and WhatsApp contact to fit your workflow.",
-    href: "/services#clinic-booking",
+      "Present your business clearly, build trust, and guide visitors toward action with a responsive website shaped around your brand and goals.",
+    href: "/services#website-development",
   },
   {
     icon: (
@@ -82,10 +82,10 @@ const services = [
         <path d="M2 12l10 5 10-5" />
       </svg>
     ),
-    title: "Academy & tutoring platforms",
+    title: "Web Applications",
     description:
-      "Bring course catalogs, owner dashboards, tutor management, media uploads, and live classes into one platform for your learning business.",
-    href: "/services#academy-platforms",
+      "Give customers or staff a secure place to book, manage information, and get work done, from dashboards and portals to full digital products.",
+    href: "/services#web-applications",
   },
   {
     icon: (
@@ -103,10 +103,10 @@ const services = [
         <path d="M8 8h8M8 12h5M8 16h8" />
       </svg>
     ),
-    title: "Custom workflow software",
+    title: "Mobile Applications",
     description:
-      "Replace spreadsheets and disconnected hand-offs with a web product shaped around your team's roles, processes, and integrations.",
-    href: "/services#custom-workflows",
+      "Bring your product to iOS and Android with a mobile experience designed around how your customers use it, connected to the services you already rely on.",
+    href: "/services#mobile-applications",
   },
 ];
 
@@ -135,8 +135,8 @@ export default function ServicesOverview() {
             </span>
           </h2>
           <p className="text-[#686B70] text-base leading-relaxed">
-            Start with the workflow that needs fixing: patient booking, online
-            learning, or a custom internal process.
+            From a new website to a complete web or mobile product, start with
+            the digital experience your business needs.
           </p>
         </div>
 

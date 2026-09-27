@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import CTAButton from "@/components/ui/CTAButton";
 
@@ -14,6 +15,7 @@ const navLinks = [
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-kavelo-paper">
@@ -23,6 +25,7 @@ export default function Header() {
           href="/"
           className="flex items-center gap-1.5 group"
           aria-label="Kavelo home"
+          aria-current={pathname === "/" ? "page" : undefined}
         >
           <span className="relative block h-7 w-7 shrink-0 overflow-hidden">
             <Image
@@ -34,7 +37,9 @@ export default function Header() {
               priority
             />
           </span>
-          <span className="font-[family-name:var(--font-syne)] text-lg font-bold text-kavelo-charcoal transition-opacity group-hover:opacity-75">
+          <span
+            className={`font-[family-name:var(--font-syne)] text-lg font-bold transition-opacity group-hover:opacity-75 ${pathname === "/" ? "text-kavelo-amber" : "text-kavelo-charcoal"}`}
+          >
             Kavelo
           </span>
         </Link>
@@ -45,7 +50,8 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm text-kavelo-charcoal/75 hover:text-kavelo-amber transition-colors duration-200 font-medium"
+              aria-current={pathname === link.href ? "page" : undefined}
+              className={`border-b-2 py-1 text-sm transition-colors duration-200 font-medium ${pathname === link.href ? "border-kavelo-amber text-kavelo-amber" : "border-transparent text-kavelo-charcoal/75 hover:text-kavelo-amber"}`}
             >
               {link.label}
             </Link>
@@ -79,7 +85,8 @@ export default function Header() {
               key={link.href}
               href={link.href}
               onClick={() => setMenuOpen(false)}
-              className="text-base text-kavelo-charcoal hover:text-kavelo-amber transition-colors font-medium"
+              aria-current={pathname === link.href ? "page" : undefined}
+              className={`text-base transition-colors font-medium ${pathname === link.href ? "text-kavelo-amber" : "text-kavelo-charcoal hover:text-kavelo-amber"}`}
             >
               {link.label}
             </Link>

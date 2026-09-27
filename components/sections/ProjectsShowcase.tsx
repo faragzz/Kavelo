@@ -16,7 +16,7 @@ const projects = [
       "Arabic support",
       "WhatsApp support",
     ],
-    image: "/projects/balsam-medical.png",
+    image: "/projects/balsam-medical.webp",
     href: "https://blsmy.com/aldammam/",
   },
   {
@@ -33,7 +33,7 @@ const projects = [
       "Admin and owner roles",
       "Real-time sessions",
     ],
-    image: "/projects/tutortod.png",
+    image: "/projects/tutortod.webp",
     href: "https://tutortod.com",
   },
 ];
@@ -63,6 +63,7 @@ export default function ProjectsShowcase() {
                     alt={`${project.title} screenshot`}
                     fill
                     sizes="(min-width: 1024px) 50vw, 100vw"
+                    unoptimized
                     className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
                   />
                 ) : (

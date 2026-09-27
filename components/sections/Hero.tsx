@@ -59,14 +59,14 @@ export default function Hero() {
         {/* Eyebrow */}
         <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest px-3 py-1.5 rounded-full text-kavelo-amber-dark bg-kavelo-amber/10 border border-kavelo-amber/20 mb-8 animate-reveal">
           <span className="w-1 h-1 rounded-full bg-kavelo-amber" />
-          Healthcare &amp; education software
+          Founder-led digital product development
         </div>
 
         {/* Headline */}
         <h1 className="font-[family-name:var(--font-syne)] font-800 text-5xl sm:text-6xl lg:text-7xl tracking-tight leading-[1.05] mb-8 animate-reveal animate-reveal-delay-1">
-          <span className="text-kavelo-charcoal">Software for clinics</span>
+          <span className="text-kavelo-charcoal">Websites, web apps,</span>
           <br />
-          <span className="text-kavelo-charcoal">and learning businesses.</span>
+          <span className="text-kavelo-charcoal">and mobile apps.</span>
           <br />
           <span
             style={{
@@ -76,15 +76,15 @@ export default function Hero() {
               backgroundClip: "text",
             }}
           >
-            built around real work.
+            built for your business.
           </span>
         </h1>
 
         {/* Subheadline */}
         <p className="text-kavelo-muted text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed mb-12 animate-reveal animate-reveal-delay-2">
-          We build clinic booking platforms, academy software, and custom
-          workflows for teams moving beyond manual processes. Work directly with
-          the engineers shaping and building your product.
+          From your first website to a full digital product, Ahmed Khaled Farag
+          works directly with you to turn your goals into a clear, buildable
+          plan.
         </p>
 
         {/* CTAs */}
@@ -107,11 +107,6 @@ export default function Hero() {
           <span className="flex items-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-kavelo-sage" />
             Fixed-scope engagements
-          </span>
-          <span className="hidden sm:block w-px h-4 bg-kavelo-border" />
-          <span className="flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-kavelo-sage" />
-            Direct engineer access
           </span>
         </div>
       </div>

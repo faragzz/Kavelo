@@ -3,8 +3,8 @@ const values = [
     id: "ship",
     label: "01",
     headline: "Ship, Don't Stall",
-    body: "Most agencies disappear into discovery for weeks before you see a single line of code. We get you to a usable MVP faster — something you can click, show users, and course-correct with, instead of another spec document.",
-    proof: "MVPs measured in weeks, not quarters",
+    body: "Start with the workflow and the people who use it. The first milestone is a clearly scoped plan, followed by working software you can review and steer.",
+    proof: "Working milestones, reviewed with you",
     accentColor: "#D9622B",
     icon: (
       <svg
@@ -25,8 +25,8 @@ const values = [
     id: "honest",
     label: "02",
     headline: "Technical Honesty",
-    body: "If a feature will take three weeks, you'll hear it in the first conversation — not the third invoice. We give straight answers on timelines, tradeoffs, and technical risk. No overpromising. No surprises.",
-    proof: "Fixed-scope quotes, no scope creep",
+    body: "Before work starts, you receive an agreed scope, timeline, and estimate. Tradeoffs and changes are discussed openly, so you can decide what belongs in the project.",
+    proof: "Scope and estimate agreed before work",
     accentColor: "#2E6E62",
     icon: (
       <svg
@@ -48,8 +48,8 @@ const values = [
     id: "quality",
     label: "03",
     headline: "Built to Last",
-    body: "Throwaway MVPs cost more in the long run. We write clean, well-structured code that your next engineer can read, extend, and maintain without needing a full rewrite six months in.",
-    proof: "Documented, tested, handoff-ready",
+    body: "The goal is software your team can continue to operate and extend. Key workflows are tested, and the handoff covers how the product is structured and deployed.",
+    proof: "Practical handoff for future maintenance",
     accentColor: "#D9622B",
     icon: (
       <svg
@@ -70,9 +70,9 @@ const values = [
   {
     id: "team",
     label: "04",
-    headline: "One Team, No Dilution",
-    body: "You will never be handed off to a junior who wasn't in the original meeting. You work directly with the engineers building your product — every call, every decision, every sprint.",
-    proof: "Direct access to your engineers, always",
+    headline: "Founder-led, direct access",
+    body: "Ahmed Khaled Farag leads the technical work and is your direct contact from scoping through delivery. The person discussing the product is the person building it.",
+    proof: "Direct work with the founder-engineer",
     accentColor: "#2E6E62",
     icon: (
       <svg
@@ -108,7 +108,7 @@ export default function WhyKavelo() {
             Why Kavelo
           </span>
           <h2 className="font-[family-name:var(--font-syne)] font-bold text-4xl lg:text-5xl text-[#1A1D24] mt-4">
-            How we work is
+            How I work is
             <br />
             <span
               style={{

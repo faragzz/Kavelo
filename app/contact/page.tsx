@@ -37,8 +37,8 @@ export default function ContactPage() {
                 </span>
               </h1>
               <p className="text-[#686B70] text-lg leading-relaxed mb-12">
-                We'll read your message, review your project, and reply within
-                24 hours with a straight answer — not a boilerplate sales email.
+                Ahmed will review your message and email you within 24 hours
+                with a straight answer.
               </p>
 
               {/* Contact details */}
@@ -125,8 +125,8 @@ export default function ContactPage() {
                       A real reply from an engineer
                     </p>
                     <p className="text-[#686B70] text-xs mt-0.5">
-                      Not an automated sequence. Not a sales call you didn't ask
-                      for.
+                      No automated sequence. Phone calls only if you request
+                      one.
                     </p>
                   </div>
                 </div>

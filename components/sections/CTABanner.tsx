@@ -31,8 +31,8 @@ export default function CTABanner() {
         </h2>
 
         <p className="text-[#686B70] text-lg leading-relaxed max-w-xl mx-auto mb-12">
-          Tell us where booking, learning, or day-to-day operations get stuck.
-          We&apos;ll help scope a practical next step and reply within 24 hours.
+          Tell Ahmed where booking, learning, or day-to-day operations get
+          stuck. He&apos;ll email you within 24 hours.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

@@ -5,65 +5,68 @@ import SectionLabel from "@/components/ui/SectionLabel";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Clinic booking platforms, academy and tutoring software, and custom workflow products built around real operating needs.",
+    "Websites, web applications, and mobile applications designed around your business, customers, and goals.",
 };
 
 const services = [
   {
-    id: "clinic-booking",
-    label: "Clinic booking platforms",
-    headline: "Make finding and booking care straightforward.",
+    id: "website-development",
+    label: "Websites & landing pages",
+    ctaLabel: "Discuss your website",
+    headline: "Make a clear, confident first impression.",
     subline:
-      "Give patients a clear path from finding a doctor to booking an appointment across your clinics.",
+      "Turn your website into a useful part of your business: explain what you offer, build trust, and make the next step obvious.",
     included: [
-      "Doctor profiles and specialty-based discovery",
-      "Clinic and branch directories",
-      "Appointment availability and online booking flows",
-      "Ratings and insurance provider information",
-      "Arabic and right-to-left support when required",
-      "WhatsApp and other service integrations",
-      "Responsive patient experience ",
+      "Custom design tailored to your brand and audience",
+      "Responsive layouts for phones, tablets, and desktops",
+      "Clear page structure and calls to action",
+      "Performance and search-engine foundations",
+      "Content management integration when useful",
+      "Analytics and third-party integrations as needed",
+      "Launch support and a practical handoff",
     ],
     idealClient:
-      "Clinics and multi-branch medical groups that want patients to discover providers and book without relying on calls and manual coordination.",
+      "Businesses launching a new offer, improving an outdated website, or making it easier for customers to understand and choose their services.",
     accent: "#D9622B",
   },
   {
-    id: "academy-platforms",
-    label: "Academy and tutoring platforms",
-    headline: "Bring courses, tutors, and live classes together.",
+    id: "web-applications",
+    label: "Web applications",
+    ctaLabel: "Discuss your web application",
+    headline: "Give customers and teams better ways to get things done.",
     subline:
-      "Give academy owners, staff, tutors, and students the tools they need in one connected learning platform.",
+      "Build a secure, browser-based product around the workflows, information, and services your business relies on.",
     included: [
-      "Course catalog and category management",
-      "Dedicated academy owner and staff dashboards",
-      "Tutor and team management",
-      "Role-based access for owners and administrators",
-      "Media uploads and course resources",
-      "Live-class and video-conferencing integration",
-      "Scheduling and real-time session management",
-    ],
-    idealClient:
-      "Tutoring businesses and academies managing courses, people, and live lessons across disconnected tools.",
-    accent: "#2E6E62",
-  },
-  {
-    id: "custom-workflows",
-    label: "Custom workflow software",
-    headline: "Replace manual hand-offs with a clear workflow.",
-    subline:
-      "Turn a validated process or product idea into a web application with clear roles, integrations, and room to grow.",
-    included: [
-      "Product discovery and scoped requirements",
-      "Role-based portals and dashboards",
-      "Database and API implementation",
-      "Third-party service integrations",
-      "Responsive user experience",
-      "Testing of key workflows",
+      "Customer portals, dashboards, and internal tools",
+      "Discovery and requirements scoped before development",
+      "Authentication and role-based access",
+      "Database, API, and third-party integrations",
+      "Responsive interface for desktop and mobile browsers",
+      "Testing for important user workflows",
       "Deployment and developer handoff",
     ],
     idealClient:
-      "Teams with a proven manual workflow or validated product idea that needs reliable software rather than another disconnected tool.",
+      "Businesses with a validated product idea or a workflow that has outgrown spreadsheets and disconnected tools.",
+    accent: "#2E6E62",
+  },
+  {
+    id: "mobile-applications",
+    label: "Mobile applications",
+    ctaLabel: "Discuss your mobile app",
+    headline: "Put your product in your customers' hands.",
+    subline:
+      "Design and build mobile experiences for iOS and Android that connect to your product and fit naturally into your customers' day.",
+    included: [
+      "App structure, screens, and interaction design",
+      "iOS and Android development",
+      "Connection to existing APIs and services",
+      "Account, notification, and device features as needed",
+      "Testing across key devices and workflows",
+      "App Store and Google Play release preparation",
+      "Launch support and a practical handoff",
+    ],
+    idealClient:
+      "Businesses extending an existing digital product or launching a mobile service for their customers.",
     accent: "#D9622B",
   },
 ];
@@ -77,9 +80,9 @@ export default function ServicesPage() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] rounded-full bg-[#D9622B]/10 blur-[80px] pointer-events-none" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
-          <SectionLabel>What we build</SectionLabel>
+          <SectionLabel>What I build</SectionLabel>
           <h1 className="font-[family-name:var(--font-syne)] font-bold text-5xl lg:text-7xl text-[#1A1D24] mt-6 mb-6 leading-tight">
-            Software shaped around your operations.
+            Websites, web apps, and mobile apps.
             <br />
             <span
               style={{
@@ -89,12 +92,12 @@ export default function ServicesPage() {
                 backgroundClip: "text",
               }}
             >
-              Built with your team.
+              Built around your goals.
             </span>
           </h1>
           <p className="text-[#686B70] text-lg max-w-xl leading-relaxed">
-            Start with a clear scope, work directly with the engineers, and
-            build only what your team needs to move forward.
+            From a first website to a multi-role product, Ahmed works directly
+            with you to shape a clear scope and a practical build plan.
           </p>
         </div>
       </section>
@@ -147,7 +150,7 @@ export default function ServicesPage() {
                 </div>
 
                 <CTAButton href="/contact">
-                  Start a {service.label.split(" ")[0].toLowerCase()} project →
+                  {service.ctaLabel} →
                 </CTAButton>
               </div>
 

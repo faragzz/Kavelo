@@ -19,33 +19,32 @@ const inter = Inter({
   weight: ["300", "400", "500", "600"],
 });
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://kavelo-dusky.vercel.app";
+
 export const metadata: Metadata = {
   title: {
     default: "Kavelo — Software Built Fast, Built to Last",
     template: "%s | Kavelo",
   },
   description:
-    "Kavelo is a software development agency building websites, web apps, and mobile apps for founders and small businesses. Senior engineers, direct communication, fast delivery.",
+    "Founder-led websites, web applications, and mobile apps by Ahmed Farag. Clear scope, direct communication, and practical handoff.",
   keywords: [
     "software development agency",
-    "web development",
+    "website development",
+    "web application development",
     "mobile app development",
-    "Next.js agency",
-    "React Native developers",
-    "custom web apps",
-    "software engineering for founders",
+    "custom software development",
     "Kavelo",
   ],
-  authors: [{ name: "Kavelo Team" }],
+  authors: [{ name: "Ahmed Farag" }],
   creator: "Kavelo",
   icons: {
     icon: "/icon.png",
     shortcut: "/icon.png",
     apple: "/apple-icon.png",
   },
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || "https://kavelo.dev",
-  ),
+  metadataBase: new URL(siteUrl),
   alternates: {
     canonical: "/",
   },
@@ -63,11 +62,11 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://kavelo.dev",
+    url: siteUrl,
     siteName: "Kavelo",
     title: "Kavelo — Software Built Fast, Built to Last",
     description:
-      "Websites, web apps, and mobile apps built by senior engineers — directly, no layers, no dilution.",
+      "Founder-led websites, web applications, and mobile apps by Ahmed Farag.",
     images: [
       {
         url: "/logo-cropped.png",
@@ -81,7 +80,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Kavelo — Software Built Fast, Built to Last",
     description:
-      "Websites, web apps, and mobile apps built by senior engineers — directly, no layers, no dilution.",
+      "Founder-led websites, web applications, and mobile apps by Ahmed Farag.",
     images: ["/logo-cropped.png"],
   },
 };
@@ -90,15 +89,15 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   name: "Kavelo",
-  image: "https://kavelo.dev/logo-cropped.png",
-  "@id": "https://kavelo.dev",
-  url: "https://kavelo.dev",
+  image: `${siteUrl}/logo-cropped.png`,
+  "@id": siteUrl,
+  url: siteUrl,
   email: "kavelo.hq@gmail.com",
   description:
-    "Kavelo is a software development agency building websites, web apps, and mobile apps for founders and small businesses.",
+    "Founder-led websites, web applications, and mobile apps by Ahmed Farag.",
   knowsAbout: [
-    "Web Development",
-    "Custom Software Development",
+    "Website Development",
+    "Web Application Development",
     "Mobile Application Development",
     "Next.js",
     "React Native",
@@ -106,24 +105,24 @@ const jsonLd = {
   ],
   hasOfferCatalog: {
     "@type": "OfferCatalog",
-    name: "Software Engineering Services",
+    name: "Website, Web Application, and Mobile Development",
     itemListElement: [
       {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
-          name: "Websites & Landing Pages",
+          name: "Websites and Landing Pages",
           description:
-            "High-performance websites engineered for conversion, speed, and SEO.",
+            "Responsive business websites and landing pages tailored to brand, audience, and goals.",
         },
       },
       {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
-          name: "Custom Platforms & Portals",
+          name: "Web Applications",
           description:
-            "Scalable web applications, SaaS platforms, and internal tools.",
+            "Custom browser-based products, portals, dashboards, and integrated business tools.",
         },
       },
       {
@@ -131,7 +130,8 @@ const jsonLd = {
         itemOffered: {
           "@type": "Service",
           name: "Mobile Applications",
-          description: "Native-grade iOS and Android mobile applications.",
+          description:
+            "Mobile products designed and built for iOS and Android.",
         },
       },
     ],

@@ -16,10 +16,10 @@ export const contactSchema = z.object({
 export type ContactFormData = z.infer<typeof contactSchema>;
 
 export const projectTypeLabels: Record<string, string> = {
-  website: "Websites & Landing Pages",
-  "custom-software": "Custom Platforms & Portals",
-  "mobile-app": "Mobile Applications",
-  both: "Both / Multiple Services",
+  website: "Website or landing page",
+  "custom-software": "Web application",
+  "mobile-app": "Mobile application",
+  both: "Multiple services",
 };
 
 export const budgetRangeLabels: Record<string, string> = {

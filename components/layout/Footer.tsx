@@ -10,7 +10,10 @@ const footerLinks = {
     { href: "/contact", label: "Contact" },
   ],
   Services: [
-    { href: "/services#website-development", label: "Website Development" },
+    {
+      href: "/services#website-development",
+      label: "Websites & Landing Pages",
+    },
     { href: "/services#web-applications", label: "Web Applications" },
     { href: "/services#mobile-applications", label: "Mobile Applications" },
   ],
@@ -38,8 +41,8 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-kavelo-muted text-sm leading-relaxed max-w-xs">
-              Software built by engineers who care about shipping clean code —
-              not just closing tickets.
+              Founder-led websites, web applications, and mobile products by
+              Ahmed Farag.
             </p>
             <a
               href="mailto:kavelo.hq@gmail.com"

@@ -5,25 +5,25 @@ import SectionLabel from "@/components/ui/SectionLabel";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Kavelo was built around a simple idea: founders deserve a software partner who builds well, communicates honestly, and ships on time. Learn why we exist and how we work.",
+    "Meet Ahmed Farag, the founder-engineer behind Kavelo. Learn about the clinic booking, academy, and custom workflow software practice.",
 };
 
 const values = [
   {
-    headline: "Ship, Don't Stall",
-    body: "The worst thing a software project can do is stall. Not fail — stall. Endless discovery, endless revisions, endless conversations about things that could be resolved by putting a working MVP in front of users. Kavelo was built to move.",
+    headline: "Scope before building",
+    body: "Before development begins, I work with you to define what is included, what is not, the expected timeline, and the estimated cost. The project moves forward when those details are clear.",
   },
   {
     headline: "Technical Honesty",
-    body: "We tell you what we think — including things you might not want to hear. If your timeline is unrealistic, we'll say so on the first call. If a feature is going to add 3 weeks, we'll tell you before we start it. You deserve to make decisions with real information.",
+    body: "You work directly with me, Ahmed Farag, founder and engineer. I explain technical tradeoffs and discuss changes with you so you can make decisions with clear information.",
   },
   {
     headline: "Built to Last",
-    body: "We've seen too many founders inherit spaghetti code from a previous agency and face a full rewrite six months in. We build as if your next engineer is going to maintain this — because they will.",
+    body: "The goal is software that can be maintained after launch. I focus on clear structure, testing key workflows, and a practical handoff for whoever supports the product next.",
   },
   {
-    headline: "One Team, No Dilution",
-    body: "There's no PM layer, no account manager buffer, no junior picking up overflow. You work directly with the engineers building your product, every step of the way.",
+    headline: "Founder-led delivery",
+    body: "I lead the technical work and stay your direct contact from the first conversation through implementation and handoff. Any additional contributors and responsibilities are agreed up front.",
   },
 ];
 
@@ -39,7 +39,7 @@ export default function AboutPage() {
             <div>
               <SectionLabel>About Kavelo</SectionLabel>
               <h1 className="font-[family-name:var(--font-syne)] font-bold text-5xl lg:text-6xl text-[#1A1D24] mt-6 mb-6 leading-tight">
-                Built by engineers
+                Built by a founder-engineer
                 <br />
                 <span
                   style={{
@@ -50,13 +50,13 @@ export default function AboutPage() {
                     backgroundClip: "text",
                   }}
                 >
-                  who ship things.
+                  who ships things.
                 </span>
               </h1>
               <p className="text-[#686B70] text-lg leading-relaxed">
-                Kavelo exists because founders kept telling us the same story:
-                they hired an agency, got a beautiful proposal, waited three
-                months, and ended up with code they couldn&apos;t maintain.
+                Kavelo is my founder-led software practice. I focus on clinic
+                booking, academy platforms, and custom workflows, with direct
+                communication from scoping through delivery.
               </p>
             </div>
 
@@ -67,7 +67,7 @@ export default function AboutPage() {
                     AF
                   </div>
                   <p className="text-[#1A1D24] font-semibold font-[family-name:var(--font-syne)] mb-1">
-                    Ahmed Farag
+                    Ahmed Khaled Farag
                   </p>
                   <p className="text-[#686B70] text-sm">
                     Founder &amp; Engineer, Kavelo
@@ -100,10 +100,10 @@ export default function AboutPage() {
               the next hire wasn&apos;t rewriting it.
             </p>
             <p>
-              I started Kavelo with a simple constraint: only take work I can do
-              well, communicate honestly, and get to an MVP faster than the
-              agencies I used to clean up after. If a timeline isn&apos;t real,
-              I say so before we take the project — not after the third invoice.
+              I started Kavelo with a simple constraint: take on work I can
+              deliver responsibly, communicate clearly, and scope before
+              development begins. If a timeline or requirement needs to change,
+              I raise it early so the client can make an informed decision.
             </p>
             <p>
               The name is coined: craft plus velocity. A cove you can actually
@@ -117,13 +117,13 @@ export default function AboutPage() {
       <section className="py-24 lg:py-32 bg-[#F7F5F1]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-20">
-            <SectionLabel>How we work</SectionLabel>
+            <SectionLabel>How I work</SectionLabel>
             <h2 className="font-[family-name:var(--font-syne)] font-bold text-4xl lg:text-5xl text-[#1A1D24] mt-6">
               Values, in context.
             </h2>
             <p className="text-[#686B70] mt-4 max-w-lg mx-auto">
-              These aren&apos;t aspirational bullets on a deck — they&apos;re
-              the things we actually think about when we take on a project.
+              These are the principles I use when scoping and delivering a
+              project.
             </p>
           </div>
 
@@ -156,8 +156,8 @@ export default function AboutPage() {
             Let&apos;s work together.
           </h2>
           <p className="text-[#686B70] mb-8">
-            If any of this resonates, we&apos;d love to hear what you&apos;re
-            building.
+            If this approach fits your project, tell me what you&apos;re
+            building and where the current process gets stuck.
           </p>
           <CTAButton href="/contact" size="lg">
             Start the conversation →
