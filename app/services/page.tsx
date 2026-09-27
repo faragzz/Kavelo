@@ -149,9 +149,7 @@ export default function ServicesPage() {
                   </p>
                 </div>
 
-                <CTAButton href="/contact">
-                  {service.ctaLabel} →
-                </CTAButton>
+                <CTAButton href="/contact">{service.ctaLabel} →</CTAButton>
               </div>
 
               {/* Right — included list */}
