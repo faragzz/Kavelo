@@ -22,7 +22,7 @@ const services = [
       "Ratings and insurance provider information",
       "Arabic and right-to-left support when required",
       "WhatsApp and other service integrations",
-      "Responsive patient experience",
+      "Responsive patient experience ",
     ],
     idealClient:
       "Clinics and multi-branch medical groups that want patients to discover providers and book without relying on calls and manual coordination.",
